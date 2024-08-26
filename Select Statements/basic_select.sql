@@ -1,7 +1,7 @@
  /* display all columns and rows of a table
  Syntax
  select <Column_list> from <table_name>
-	Column List: * to display all columns  or coma seperated column names / expressions
+	Column List: * to display all columns or coma seperated column names / expressions
 	table_name: the table name from your schema
  */
 
