@@ -5,24 +5,37 @@
 */
 
 -- Selecting constants
-select 1 from dual;
+SELECT 1 FROM DUAL;
 -- or
 select 1;
 
 -- display strings
-select 'Hello World' from dual;
+SELECT 'Hello World' FROM DUAL;
 
 -- display multiple columns
-select 1,2,3,4 ;
+SELECT 1, 2, 3, 4;
 
 -- arithmetic operation
-select 10+(20 *2);
+SELECT 10 + (20 * 2);
 
 -- Apply builtin Functions
-select length('Alex');
-select upper ('alex');
-select current_date();
-select abs(-10);
+SELECT LENGTH('Alex');
+SELECT UPPER('alex');
+SELECT CURRENT_DATE();
+SELECT ABS(- 10);
 
 -- conditional display
-select CASE when 1>0 then 'True' ELSE 'False' END;
+SELECT 
+    CASE
+        WHEN 1 > 0 THEN 'True'
+        ELSE 'False'
+    END;
+
+/* using alias */
+-- 'as' is optional
+-- all aliases with spaces in them must be included in quotes (single or double)
+SELECT 
+    2 + 3 AS add_nums,
+    3 - 2 sub_nums,
+    3 * 2 'multiply numbers',
+    4 / 3 AS division;
