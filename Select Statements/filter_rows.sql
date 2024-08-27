@@ -14,6 +14,7 @@ select <Column_list> from <table_name> [where condition];
         IS NULL
         LIKE
         BETWEEN
+        NOT
 */
 
 /* using the equals operator */
@@ -173,3 +174,46 @@ FROM
     emp
 WHERE
     sal >= 3000 AND sal <= 5000;
+
+-- is NULL operator
+SELECT 
+    *
+FROM
+    emp
+WHERE
+    comm = NULL;
+-- the above query will always produce an empty set as no null is equal to other null
+-- to test / compare the values for null use the 'is null' operator
+SELECT 
+    *
+FROM
+    emp
+WHERE
+    comm IS NULL;
+    
+-- NOT operator
+-- used in conjunction with 'IN' 'BETWEEN' and 'IS NULL'
+
+-- is not null
+SELECT 
+    *
+FROM
+    emp
+WHERE
+    comm IS not NULL;
+    
+-- NOT IN
+SELECT 
+    *
+FROM
+    emp
+WHERE
+    deptno NOT IN (10 , 20);
+    
+-- NOT Between
+SELECT 
+    *
+FROM
+    emp
+WHERE
+    sal NOT BETWEEN 3000 AND 5000;
