@@ -47,6 +47,14 @@ FROM
     emp
 WHERE
     hiredate = '1980-12-17';
+    
+-- multiple conditions with OR
+SELECT 
+    ename, sal, deptno
+FROM
+    emp
+WHERE
+    deptno = 10 OR deptno = 20;
 
 /* using the not equals operator */
 SELECT 
@@ -72,4 +80,18 @@ WHERE
     
 /*  greater than operator */
 select * from emp where sal > 2500;
-select ename, sal, deptno from emp where sal > 2500;
+SELECT 
+    ename, sal, deptno
+FROM
+    emp
+WHERE
+    sal > 2500;
+
+-- multiple conditions with AND
+SELECT 
+    ename, sal, deptno
+FROM
+    emp
+WHERE
+    sal > 2500 AND deptno = 10;
+    
