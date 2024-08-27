@@ -1,18 +1,48 @@
 -- Write a SQL statement to display a string "This is SQL Exercise". 
+select 'This is SQL Exercise';
 -- Write a SQL query to display three numbers in three columns. 
+select 10,20,30;
 -- Write a SQL query to display the sum of two numbers 10 and 15
+select 10 +15;
 -- write a query to evaluate any arithmetic  expression (10+20*70+20/10)
+select 10+20*70+20/10;
 
 
 /* Using emp schema */
 --  display all employee names 
+SELECT 
+    ename
+FROM
+    emp.emp;
 --  display all the columns and rows of emp table
+SELECT 
+    *
+FROM
+    emp.emp;
 --  display employees working in department number 10
+SELECT 
+    *
+FROM
+    emp.emp
+WHERE
+    deptno = 10;
 --  display all the columns and rows of emp table where salary is more than 2500
+SELECT 
+    *
+FROM
+    emp.emp
+WHERE
+    sal > 2500;
 
 -- HR Database - SORT FILTER: Exercises
 --------------------------------------------------------
 -- find those employees whose salaries are less than 6000. Return full name (first and last name), and salary.
+SELECT 
+    first_name, last_name, salary
+FROM
+    employees
+WHERE
+    salary < 6000;
 -- find those employees whose salary is higher than 8000. Return first name, last name and department number and salary.
 -- find those employees whose last name is "McEwen". Return first name, last name and department ID.
 -- identify employees who do not have a department number. 
