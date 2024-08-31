@@ -1,4 +1,6 @@
 /*
+-- The following are the date types that can be associated with a column
+
 Date:  YYYY-MM-DD
 Example: 2024-08-31
 
