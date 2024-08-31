@@ -27,3 +27,13 @@ format: A string specifying the format for the output.
 		User Interfaces: Displaying dates in user-friendly formats, like August 20, 2024.
 		Data Export: Formatting dates in CSV or other export formats according to required standards.
 */
+
+select date_format(curdate(),'%m - %d') as 'formatted date';
+
+select date_format(curdate(),'%D of the  %M') as 'formatted date';
+
+SELECT 
+    hiredate,
+    date_format(hiredate,'%D of %M,%Y') as format
+FROM
+    emp;
