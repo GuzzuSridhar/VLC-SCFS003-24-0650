@@ -1,48 +1,19 @@
 -- Write a SQL statement to display a string "This is SQL Exercise". 
-select 'This is SQL Exercise';
 -- Write a SQL query to display three numbers in three columns. 
-select 10,20,30;
 -- Write a SQL query to display the sum of two numbers 10 and 15
-select 10 +15;
 -- write a query to evaluate any arithmetic  expression (10+20*70+20/10)
-select 10+20*70+20/10;
 
 
-/* Using emp schema */
+-- Using emp schema 
+----------------------------------------------------------
 --  display all employee names 
-SELECT 
-    ename
-FROM
-    emp.emp;
 --  display all the columns and rows of emp table
-SELECT 
-    *
-FROM
-    emp.emp;
 --  display employees working in department number 10
-SELECT 
-    *
-FROM
-    emp.emp
-WHERE
-    deptno = 10;
 --  display all the columns and rows of emp table where salary is more than 2500
-SELECT 
-    *
-FROM
-    emp.emp
-WHERE
-    sal > 2500;
 
 -- HR Database - SORT FILTER: Exercises
 --------------------------------------------------------
 -- find those employees whose salaries are less than 6000. Return full name (first and last name), and salary.
-SELECT 
-    first_name, last_name, salary
-FROM
-    employees
-WHERE
-    salary < 6000;
 -- find those employees whose salary is higher than 8000. Return first name, last name and department number and salary.
 -- find those employees whose last name is "McEwen". Return first name, last name and department ID.
 -- identify employees who do not have a department number. 
@@ -57,4 +28,27 @@ WHERE
 -- find the employees who were hired before June 21st, 2002
 -- find the employees whose managers hold the ID 120, 103, or 145. Return first name, last name, email, salary and manager ID.
 -- find the employees whose department numbers are included in 30, 40, or 90
+
+-- using single-row functions on the HR database 
+-----------------------------------------------------------
+-- Convert the first name of all employees to uppercase.
+-- Convert the last name of all employees to lowercase.
+-- Find the length of each employee's full name (first name + last name)
+-- Extract the first three characters of the job title for all employees.
+-- Find the position of the letter 'a' in the department names.
+-- Calculate the number of years each employee has been with the company.
+-- Display the day of the week when each employee was hired.
+-- Calculate the annual salary of all employees (assuming 12 months in a year).
+-- Round the salaries of all employees to the nearest thousand.
+-- Assign a performance rating based on the salary. (e.g., 'High' for salary > 10000, 'Medium' for 5000-10000, 'Low' for < 5000).
+-- Remove any leading or trailing spaces from department names.
+-- Pad the job title with asterisks (*) on the left to make it 20 characters long.
+-- Display the hire date of employees in 'Month Day, Year' format
+-- Replace 'Manager' with 'Lead' in all job titles.
+
+
+
+
+
+
 
