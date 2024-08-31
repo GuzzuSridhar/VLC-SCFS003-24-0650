@@ -1,5 +1,6 @@
 /*
 	used to join strings
+    the concat function can take more than 2 arguments
 */
 
 SELECT 
