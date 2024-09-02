@@ -20,3 +20,36 @@ SELECT
 FROM
     emp
 GROUP BY deptno;
+
+-- # employees in each department
+SELECT 
+    deptno, COUNT(*) '#employees'
+FROM
+    emp
+GROUP BY deptno;
+
+-- # employees reporting to a manager
+SELECT 
+    mgr, COUNT(*) '# Repotees'
+FROM
+    emp
+GROUP BY mgr;
+
+-- Group by multiple columns
+SELECT 
+    deptno, mgr, COUNT(*)
+FROM
+    emp
+GROUP BY deptno , mgr
+ORDER BY deptno;
+
+
+
+
+
+
+
+
+
+
+

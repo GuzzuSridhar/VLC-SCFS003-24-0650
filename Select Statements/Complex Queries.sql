@@ -3,15 +3,19 @@ Complex Queries
 */
 
 -- Format string with first character in Caps
-select 
-concat(upper(left(ename,1)),lower(right(ename,length(ename)-1))) as Name 
-from emp.emp;
+SELECT 
+    CONCAT(UPPER(LEFT(ename, 1)),
+            LOWER(RIGHT(ename, LENGTH(ename) - 1))) AS Name
+FROM
+    emp.emp;
 
 -- or
 
-select 
-concat(upper(left(ename,1)),lower(substr(ename,2))) as Name 
-from emp.emp;
+SELECT 
+    CONCAT(UPPER(LEFT(ename, 1)),
+            LOWER(SUBSTR(ename, 2))) AS Name
+FROM
+    emp.emp;
 
 -- Count vowels in a string
 SELECT 
