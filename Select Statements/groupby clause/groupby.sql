@@ -44,7 +44,24 @@ GROUP BY deptno , mgr
 ORDER BY deptno;
 
 
+-- joinees year / month wise
+ SELECT 
+    YEAR(hiredate) AS yoj,
+    MONTH(hiredate) AS moj,
+    COUNT(hiredate) AS joinees
+FROM
+    emp
+GROUP BY 1 , 2
+ORDER BY 1 , 2;
 
+-- Where clause is executed before the group by clause
+SELECT 
+    deptno, SUM(sal) AS 'dept total'
+FROM
+    emp
+WHERE
+    deptno IN (10 , 30)
+GROUP BY deptno;
 
 
 
