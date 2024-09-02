@@ -13,7 +13,7 @@ ON table1.column_name = table2.column_name;
     This join type is one of the most common and is essential for working with relational databases where data is spread across multiple tables.
     Rows without matches are excluded: INNER JOIN only returns rows where the specified condition (the ON clause) is met.
 */
-*/
+
 
 -- Using the inner join key word
 SELECT 
