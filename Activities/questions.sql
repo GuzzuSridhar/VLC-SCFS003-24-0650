@@ -47,6 +47,18 @@
 -- Replace 'Manager' with 'Lead' in all job titles.
 
 
+-- Group By clause using the Northwind database
+-- Total Number of Orders per Customer
+-- Total Sales Amount by Each Employee
+-- Average Freight Cost per Shipper
+-- Number of Products in Each Category
+-- Total Quantity of Products Ordered by Each Customer
+-- Total Sales Amount by Each Product
+-- Number of Employees in Each Title
+-- Number of Orders Placed Each Year
+-- Number of Orders Handled by Each Employee
+-- Number of Products Supplied by Each Supplier
+
 
 
 
