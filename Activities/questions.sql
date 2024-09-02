@@ -49,7 +49,7 @@
 
 -- Group By clause using the Northwind database
 -- Total Number of Orders per Customer
--- Total Sales Amount by Each Employee
+-- Total Number of Orders by Each Employee
 -- Average Freight Cost per Shipper
 -- Number of Products in Each Category
 -- Total Quantity of Products Ordered by Each Customer
