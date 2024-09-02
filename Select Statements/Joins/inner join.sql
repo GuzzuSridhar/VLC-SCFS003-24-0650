@@ -2,6 +2,17 @@
 An INNER JOIN in MySQL is used to combine rows from two or more tables based 
 on a related column (not the name but the types of the columns) between them. 
 The INNER JOIN keyword selects records that have matching values in both tables.
+Syntax
+SELECT column_names
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+	When you use an INNER JOIN, MySQL returns only the rows where there is a match between the columns being joined. 
+    If there is no match, the rows are excluded from the result set.
+    
+    This join type is one of the most common and is essential for working with relational databases where data is spread across multiple tables.
+    Rows without matches are excluded: INNER JOIN only returns rows where the specified condition (the ON clause) is met.
+*/
 */
 
 -- Using the inner join key word
