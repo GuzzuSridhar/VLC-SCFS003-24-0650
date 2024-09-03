@@ -29,13 +29,21 @@ ON table1.column_name = table2.column_name;
 */
 
 -- all the department details with employess and also no employees assigned.
-SELECT 
-    loc, SUM(sal) AS 'Total'
+  SELECT 
+    dname, ename
 FROM
-    emp e
-        JOIN
-    dept d ON e.deptno = d.deptno
-GROUP BY loc;
+    dept d
+        LEFT JOIN
+    emp e ON e.deptno = d.deptno
+;
+ 
+ SELECT 
+    dname, COUNT(ename)
+FROM
+    dept d
+        LEFT JOIN
+    emp e ON e.deptno = d.deptno
+GROUP BY dname;
 
 
  SELECT 
