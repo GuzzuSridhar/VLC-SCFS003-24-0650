@@ -89,3 +89,32 @@ FROM
         JOIN
     dept ON emp.deptno = dept.deptno
 GROUP BY dept.deptno;
+
+-- Non Equi Join
+ SELECT 
+    ename, sal, grade
+FROM
+    emp
+        JOIN
+    salgrade ON sal BETWEEN losal AND hisal;
+    
+-- Join 3 tables
+SELECT 
+    ename, sal, grade, dname, loc
+FROM
+    emp e
+        JOIN
+    salgrade s ON sal BETWEEN losal AND hisal
+        JOIN
+    dept d ON e.deptno = d.deptno
+    order by 5,3
+    ;
+    
+-- total salary spend location wise
+ SELECT 
+    loc, SUM(sal) AS total
+FROM
+    emp e
+        JOIN
+    dept d ON e.deptno = d.deptno
+GROUP BY d.loc;
