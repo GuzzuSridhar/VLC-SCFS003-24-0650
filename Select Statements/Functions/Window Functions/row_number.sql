@@ -17,3 +17,5 @@ ROW_NUMBER() OVER (
 */
 
 select ename, sal, row_number() over (order by sal ) as row_num from emp;
+
+select deptno, ename, hiredate, row_number() over (partition by deptno order by hiredate) as seq from emp;
