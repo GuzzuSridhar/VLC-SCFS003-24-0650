@@ -89,6 +89,23 @@
 -- find the department name, department ID, and number of employees in each department.
 -- find out the full name (first and last name) of the employee with an ID and the name of the country where he/she is currently employed.
 
+-- SUb queries on HR
+-- -------------------------------------
+-- find those employees who receive a higher salary than the employee with ID 163
+-- find out which employees have the same designation as the employee whose ID is 169. 
+-- find those employees who earn more than the average salary. 
+-- find those employees who report to that manager whose first name is ‘Payam’.
+-- find all those employees who work in the Finance department.
+-- find the employee whose salary is 3000 and reporting person’s ID is 121
+-- find those employees whose ID matches any of the numbers 134, 159 and 183
+-- find those employees whose salary falls within the range of the smallest salary and 2500.
+-- find those employees who do not work in the departments where managers’ IDs are between 100 and 200 (Begin and end values are included).
+-- find those employees who get second-highest salary.
+-- find those employees who work in the same department as ‘Clara’.
+-- find those employees who work in a department where the employee’s first name contains the letter 'T'
+-- find those employees who earn more than the average salary and work in the same department as an employee whose first name contains the letter 'J'.
+-- find those employees whose department is located at ‘Toronto’.
+-- find those employees whose salary is lower than that of employees whose job title is ‘MK_MAN’.
 
 
 
