@@ -35,4 +35,44 @@ WHERE
             northwind.products
         WHERE
             CategoryID = 2);
+
+-- getting the same result set using a single row sub query            
+SELECT 
+    productid, ProductName, price
+FROM
+    northwind.products
+WHERE
+    price >  (SELECT 
+            min(price)
+        FROM
+            northwind.products
+        WHERE
+            CategoryID = 2);
+            
+-- using the ALL operator
+-- find the products whose price is greater than  the price of all product with category 2
+SELECT 
+    productid, ProductName, price
+FROM
+    northwind.products
+WHERE
+    price > ALL (SELECT 
+            price
+        FROM
+            northwind.products
+        WHERE
+            CategoryID = 2);
+
+-- getting the same result set using a single row sub query            
+SELECT 
+    productid, ProductName, price
+FROM
+    northwind.products
+WHERE
+    price >  (SELECT 
+            max(price)
+        FROM
+            northwind.products
+        WHERE
+            CategoryID = 2);
             
