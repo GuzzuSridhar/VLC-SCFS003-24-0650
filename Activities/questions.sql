@@ -89,7 +89,7 @@
 -- find the department name, department ID, and number of employees in each department.
 -- find out the full name (first and last name) of the employee with an ID and the name of the country where he/she is currently employed.
 
--- SUb queries on HR
+-- Sub queries on HR
 -- -------------------------------------
 -- find those employees who receive a higher salary than the employee with ID 163
 -- find out which employees have the same designation as the employee whose ID is 169. 
