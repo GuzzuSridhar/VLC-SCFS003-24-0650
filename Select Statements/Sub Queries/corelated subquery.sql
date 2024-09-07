@@ -1,5 +1,5 @@
 /*
- A corelated subquery is the which gets executed (multiple times) once per each outer query.
+ A corelated subquery is the which gets executed (multiple times) once per each record in outer query.
  Also when there is a reference to the outer tables column is in the sub query
 */         
 select 
