@@ -19,14 +19,14 @@ CREATE TABLE statement that includes various numeric data types in MySQL:
 
 -- By default all the numeic fields are signed and can hold +ve and -ve values
 create table if not exists num_types(
-	d INT ,      							-- Integer, automatically increments
+	d INT ,      							-- Integer
     age TINYINT,                            -- Tiny integer, small range of values
     score SMALLINT,                         -- Small integer, moderate range of values
     salary MEDIUMINT,                       -- Medium integer, larger range of values
     population BIGINT,                      -- Big integer, very large range of values
     price DECIMAL(10, 2),                   -- Fixed-point number with 
-    discount_rate FLOAT,          			-- Floating-point number 5 digits total, 2 after the decimal
-    exchange_rate DOUBLE       				-- Double precision floating-point number with 10 digits total, 4 after the decimal
+    discount_rate FLOAT,          			-- Floating-point number 
+    exchange_rate DOUBLE       				-- Double precision floating-point number 
 );
 
 -- Precision and Scale
