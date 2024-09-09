@@ -24,3 +24,5 @@ CREATE SCHEMA [IF NOT EXISTS] schema_name
 */
 
 CREATE SCHEMA if not exists `ddl` ;
+
+
