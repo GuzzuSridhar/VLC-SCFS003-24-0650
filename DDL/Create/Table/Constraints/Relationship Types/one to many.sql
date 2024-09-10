@@ -8,7 +8,7 @@ CREATE TABLE Authors (
 CREATE TABLE Books (
     book_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(255) NOT NULL,
-    author_id INT,
+    author_id INT, -- not unique (FK column) and hence adheres to One to Many relation
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
