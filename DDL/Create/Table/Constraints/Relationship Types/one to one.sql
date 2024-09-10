@@ -8,7 +8,7 @@ CREATE TABLE Users (
 -- Profiles table with a one-to-one relationship to Users
 CREATE TABLE Profiles (
     profile_id INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT UNIQUE,
+    user_id INT unique, -- make the FK column unique to attain a one to one relation
     bio TEXT,
     profile_picture VARCHAR(255),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
