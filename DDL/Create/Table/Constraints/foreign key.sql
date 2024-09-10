@@ -12,9 +12,14 @@ create table emp_fk(
     foreign key (department) references dept_fk(deptno)
 );
 
-insert into dept_fk values(100,'sales','sg');
-insert into dept_fk values(200,'Admin','sg');
+insert into dept_fk values(100,'sales','SG');
+insert into dept_fk values(200,'Admin','US');
+insert into dept_fk values(300,'IT','KL');
+insert into dept_fk values(400,'Mktg','IN');
 
 insert into emp_fk values(10,'a',100,100);
 insert into emp_fk values(20,'b',200,200);
-insert into emp_fk values(4,'c',200,300); -- not allowed
+insert into emp_fk values(4,'c',200,300); 
+insert into emp_fk values(5,'e',200,300); 
+insert into emp_fk values(6,'f',200,300); 
+insert into emp_fk values(4,'g',200,400); 
