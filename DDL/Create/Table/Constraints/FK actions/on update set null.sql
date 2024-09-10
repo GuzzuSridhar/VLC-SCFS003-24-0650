@@ -13,7 +13,7 @@ CREATE TABLE if not exists employees (
     department_id INT,
     PRIMARY KEY (employee_id),
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
-    ON DELETE SET NULL
+    ON UPDATE SET NULL
 );
 
 -- Insert into if not exists departments
@@ -34,14 +34,15 @@ VALUES
 ('David Williams', 4), 
 ('Emily Clark', 5);  
 
--- Display records before deletion of department
+-- Display records updating a  update department
 SELECT * FROM departments;
 SELECT * FROM employees;
 
--- Delete Finance department (department_id = 2)
-DELETE FROM departments 
-WHERE department_id = 2;
+-- Update department_id for Sales department
+UPDATE departments 
+SET department_id = 10 
+WHERE department_id = 4;
 
--- Display records after deletion of department
+-- Display records after updating  department
 SELECT * FROM departments;
 SELECT * FROM employees;
