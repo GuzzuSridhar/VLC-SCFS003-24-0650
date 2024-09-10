@@ -1,3 +1,4 @@
+create schema if not exists ddl;
 use ddl;
 
 CREATE TABLE if not exists departments (
