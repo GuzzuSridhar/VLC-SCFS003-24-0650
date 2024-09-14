@@ -25,3 +25,7 @@
   
   -- with grant option (grants the permission to grant rights to other user)
    grant all privileges on ddl.* to 'alex'@'localhost' with grant option;
+   flush privileges;
+   revoke grant option on ddl.* from 'alex'@'localhost';
+   flush privileges;
+   
