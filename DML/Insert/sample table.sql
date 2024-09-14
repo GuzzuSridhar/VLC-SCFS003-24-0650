@@ -1,0 +1,1 @@
+create table test_dml(id int primary key auto_increment, name varchar(50));
