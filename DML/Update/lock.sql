@@ -4,3 +4,7 @@ start transaction;
     -- dml
     -- dml
 commit; -- the lock is released
+
+-- explict locks
+lock table emp write; -- does not allow insert into emp
+unlock tables;
