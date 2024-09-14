@@ -29,7 +29,7 @@ MODIFY COLUMN column_name new_datatype [constraints];
 -- change the datatype scale , precession
 alter table employees modify column salary decimal(15,2);
 
--- add constraints using
+-- add constraints using (Column level)
 alter table employees modify column birth_date date not null default (current_date);
 
 -- insert a record
@@ -41,6 +41,8 @@ alter table employees modify column email varchar(10);
 
 -- completely change the datatype
 alter table employees modify column first_name char(50);
+
+truncate table employees;
 
 alter table employees modify column email varchar(10);
     
