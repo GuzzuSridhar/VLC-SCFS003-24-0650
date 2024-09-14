@@ -25,3 +25,22 @@ MODIFY COLUMN column_name new_datatype [constraints];
 	Database Specifics:
 		Syntax and support for MODIFY COLUMN may vary between different SQL databases (e.g., MySQL, PostgreSQL, SQL Server). Check your database documentation for specific details.
 */
+
+-- change the datatype scale , precession
+alter table employees modify column salary decimal(15,2);
+
+-- add constraints using
+alter table employees modify column birth_date date not null default (current_date);
+
+-- insert a record
+INSERT INTO `ddl`.`employees` (`first_name`, `last_name`, `email`, `hire_date`, `salary`, `middle_name`) VALUES ('Alex', 'Chan', 'alex@gmail.com', curdate(), 999, 'alex');
+
+-- error situation
+alter table employees modify column email varchar(10);
+	-- ERROR 1406 (22001): Data too long for column 'email' at row 1
+
+-- completely change the datatype
+alter table employees modify column first_name char(50);
+
+alter table employees modify column email varchar(10);
+    
