@@ -12,5 +12,34 @@ Key Features of Indexes:
 		when a primary key is applied to a column/s
         when FK is applied to a column/s
         when a unique constraint is applied to a column/s
+        
+Syntax
+		CREATE TABLE table_name (
+			column_name data_type,
+			UNIQUE (column_name)
+        
+		CREATE TABLE table_name (
+			column_name data_type,
+			INDEX (column_name)
+		);
+        
+       	CREATE TABLE table_name (
+			column1_name data_type,
+			column2_name data_type,
+			INDEX (column1_name, column2_name)
+		);
+        
 			
 */
+
+create index idx_salary on emp(sal);
+
+select * from emp; -- no index is used
+select * from emp where sal < 1000; -- no index is used
+
+
+-- show indexes on a given table
+show index from emp.emp;
+
+-- drop an index
+drop index idx_salary on emp;
