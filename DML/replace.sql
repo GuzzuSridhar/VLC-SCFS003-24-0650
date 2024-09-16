@@ -16,5 +16,7 @@ VALUES (value1, value2, value3, ...);
 											This operation can affect auto-increment values and trigger events if there are any.
                       
 */
-
+-- if the PK value is existing then the replace statement works as a update
 replace into emp (empno, ename, sal, deptno) values (7369,'Alex', 8989, 10);
+-- if the PK value is not existing then the replace statement works as a insert
+replace into emp (empno, ename, sal, deptno) values (8000,'Alex', 8989, 10);
