@@ -17,7 +17,6 @@ Security: Views can be used to limit user access to specific data in the base ta
 	WHERE condition;
 */
 
-
 create view emp_name as 
 SELECT 
     ename, sal, dname, loc
@@ -30,3 +29,12 @@ WHERE
 desc emp_name;
 
 select * from emp_name;
+
+alter view emp_name as 
+SELECT 
+    ename, sal, dname, loc, hiredate
+FROM
+    emp e,
+    dept d
+WHERE
+    e.deptno = d.deptno;
